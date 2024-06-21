@@ -23,7 +23,7 @@ repo = Repo(local_repo_path)
 
 #準備要上傳的檔案
 repo.index.add(['123.py'])  #檔案
-repo.index.commit('4nd')  #註解
+repo.index.commit('2nd')  #註解
 
 
 # 使用Git對象進行檔案推送上傳
