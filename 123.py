@@ -1,5 +1,6 @@
 #pip install GitPython
 from git import Git, Repo
+import time
 
 repo = Repo.init('.')  #初始化
 
@@ -21,9 +22,13 @@ remote_repo_url = 'https://github.com/mry88312/PYTHON_CLASS.git' #遠端路徑
 # 打開本地暫存庫
 repo = Repo(local_repo_path)
 
+now = time.time
+
+
 #準備要上傳的檔案
 repo.index.add(['123.py'])  #檔案
-repo.index.commit('2nd')  #註解
+now=time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time()))
+repo.index.commit(now)  #註解
 
 
 # 使用Git對象進行檔案推送上傳
