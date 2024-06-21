@@ -16,7 +16,7 @@ for commit in repo.iter_commits():  #查看上傳歷史紀錄
 
 #準備要上傳的路徑
 local_repo_path = '.'  #本地路徑
-remote_repo_url = ' https://github.com/mry88312/PYTHON_CLASS.git' #遠端路徑
+remote_repo_url = 'https://github.com/mry88312/PYTHON_CLASS.git' #遠端路徑
 
 # 打開本地暫存庫
 repo = Repo(local_repo_path)
